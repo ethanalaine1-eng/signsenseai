@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignSense AI</title>
+    <meta
+      name="description"
+      content="SignSense AI helps you translate sign language live using your camera, voice, and dictionary tools."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">S</div>
+          <span class="brand-name">SignSense AI</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#demo">Demo</a>
+          <a href="#privacy">Privacy</a>
+        </nav>
+
+        <button class="primary-btn nav-btn">Start translating</button>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow">Sign naturally</div>
+            <h1>Let’s talk with your hands.</h1>
+            <p class="hero-text">
+              Sign into your camera and watch your words appear as text — then hear them spoken,
+              save your favorites, and chat in other languages. Everything stays private, right in your browser.
+            </p>
+
+            <div class="actions">
+              <button class="primary-btn">Start translating</button>
+              <button class="ghost-btn" data-target="demo">Take the quick tour</button>
+            </div>
+
+            <div class="trust-row">
+              <span>Live captions</span>
+              <span>Private by default</span>
+              <span>Voice playback</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="SignSense product preview">
+            <div class="camera-shell">
+              <div class="camera-header">
+                <div class="camera-status">
+                  <span class="status-dot"></span>
+                  Live feed
+                </div>
+                <div class="camera-actions">
+                  <button class="camera-pill">EN</button>
+                  <button class="camera-pill camera-toggle">Live</button>
+                </div>
+              </div>
+
+              <div class="camera-stage">
+                <img
+                  src="https://images.unsplash.com/photo-1517568730816-501aae259c65?auto=format&fit=crop&w=1200&q=80"
+                  alt="Person demonstrating sign language"
+                />
+                <div class="scan-lines"></div>
+                <div class="status-badge">Streaming</div>
+                <div class="gesture-card">
+                  <span class="card-label">Detected</span>
+                  <strong data-phrase>HELLO</strong>
+                </div>
+              </div>
+
+              <div class="translation-panel">
+                <div class="trans-header">
+                  <span>Translation</span>
+                  <span class="speed-pill">1.2s</span>
+                </div>
+                <div class="phrase-row">
+                  <span class="phrase-source">Hello</span>
+                  <button class="speaker-btn" aria-label="Play translation">▶</button>
+                </div>
+                <div class="lang-row">
+                  <span>Spanish</span>
+                  <strong>Hola</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-shell" id="demo">
+          <div class="workspace-title">
+            <div class="eyebrow">Demo workspace</div>
+            <h2>Real-time conversation shell</h2>
+          </div>
+
+          <div class="workspace-grid">
+            <div class="workspace-panel camera-panel">
+              <div class="panel-header">
+                <span>Camera</span>
+                <span class="mini-indicator">Ready</span>
+              </div>
+
+              <div class="mini-stage">
+                <div class="mini-stage-glow"></div>
+                <div class="hand-icon">🤟</div>
+              </div>
+
+              <div class="caption-row">
+                <span class="caption-tag">Caption</span>
+                <strong>How are you?</strong>
+              </div>
+            </div>
+
+            <div class="workspace-panel chat-panel">
+              <div class="panel-header">
+                <span>Conversation</span>
+                <span class="mini-indicator secondary">Live</span>
+              </div>
+
+              <div class="chat-thread">
+                <div class="chat-bubble incoming">
+                  <span>Hi! Can we meet today?</span>
+                </div>
+                <div class="chat-bubble outgoing">
+                  <span>¡Claro! Podemos reunirnos hoy.</span>
+                </div>
+                <div class="chat-bubble incoming soft">
+                  <span>Perfect, I’ll bring the notes.</span>
+                </div>
+              </div>
+
+              <div class="chat-input">
+                <span>Type a phrase</span>
+                <button class="send-btn">Send</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-grid" id="features">
+          <article class="feature-card">
+            <div class="icon-wrap violet">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7v4.5a4.5 4.5 0 0 1-9 0V8a2 2 0 1 1 4 0v4.5a.5.5 0 0 1-1 0V8h-2v4.5a2.5 2.5 0 0 0 5 0V9a5 5 0 0 0-10 0v5a7 7 0 0 0 14 0V8h-2V6h-2v2h-2V6h-2v2h-2v2h-2v2.5A4.5 4.5 0 0 0 12 19a4.5 4.5 0 0 0 0-9H12z"/></svg>
+            </div>
+            <h3>Live camera translation</h3>
+            <p>Sign naturally and watch your words appear as text in real time.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-wrap blue">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3a9 9 0 0 0-9 9h2a7 7 0 0 1 7-7v-2Zm2 0v2a7 7 0 0 1 7 7h2a9 9 0 0 0-9-9Zm-3 6v6l5 3v-6l-5-3Zm2 1.5 2 1.2-2 1.2-2-1.2 2-1.2Zm-7 2.5h2v2H5v-2Zm12 0h2v2h-2v-2Z"/></svg>
+            </div>
+            <h3>Two-way conversation</h3>
+            <p>Type or speak a phrase and translate it into other languages.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-wrap orange">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 2-2Zm2 5h8v2H8V9Zm0 4h6v2H8v-2Z"/></svg>
+            </div>
+            <h3>Dictionary &amp; favorites</h3>
+            <p>Browse common signs and keep your favorite phrases handy.</p>
+          </article>
+        </section>
+
+        <section class="tour-strip" id="how-it-works">
+          <div class="tour-copy">
+            <p class="mini-label">Quick tour</p>
+            <h2>New to signing? The quick tour walks you through everything in a minute.</h2>
+          </div>
+          <button class="secondary-btn">Watch the walkthrough</button>
+        </section>
+
+        <section class="privacy-panel" id="privacy">
+          <div class="privacy-copy">
+            <p class="mini-label">Built for privacy</p>
+            <h2>Your camera footage stays local and private in your browser.</h2>
+          </div>
+          <div class="privacy-pill">Private &amp; secure</div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
